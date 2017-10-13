@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hacktoberfest Cheat Sheet</title>
+
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body>
+    <header>
+      <img src="logo.svg" alt="">
+    </header>
+
+    <div class="content">
+      <div class="cheat-sheet">
+        <div>
+          <h1 class="main-title">Cheat Sheet</h1>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Clone <span class="tooltip">Click to copy</span></h2>
+          <pre>git clone https://github.com/vildantursic/hacktoberfest.git</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Create Branch <span class="tooltip">Click to copy</span></h2>
+          <pre>git checkout coolBranch</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">List Branches <span class="tooltip">Click to copy</span></h2>
+          <pre>git branch -av</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Pull Changes <span class="tooltip">Click to copy</span></h2>
+          <pre>git pull origin master</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Add Changes <span class="tooltip">Click to copy</span></h2>
+          <pre>git add index.html</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Commit Changes <span class="tooltip">Click to copy</span></h2>
+          <pre>git commit -m "added cool things to this project"</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Push Commit <span class="tooltip">Click to copy</span></h2>
+          <pre>git push origin coolBranch</pre>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="contributors">
+        <div>
+          <h1 class="main-title">Contributors</h1>
+        </div>
+        <div>
+          <ul class="list-on-contributors">
+            <li>Vildan Tursic</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy Hacktoberfest - 2017</p>
+    </footer>
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
