@@ -12,5 +12,7 @@ function copyOnClick(el) {
   //If is sucesfully copied to clipboard, alert "Copied!"
   if(copy != ""){
     alert("Copied!");
+  }else{
+    alert("Not copied, please refresh page and try again!");
   }
 }
