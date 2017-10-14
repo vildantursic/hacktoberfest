@@ -6,6 +6,11 @@ function copyOnClick(el) {
   document.body.append(input);
   input.setAttribute('value', el.childNodes[3].innerHTML);
   input.select();
-  document.execCommand("copy");
+  var copy = document.execCommand("copy");
   input.remove();
+
+  //If is sucesfully copied to clipboard, alert "Copied!"
+  if(copy != ""){
+    alert("Copied!");
+  }
 }
