@@ -46,11 +46,14 @@ pre {
 
 /* CONTENT */
 .content {
-
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23a1a1a1' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
+
 .content .main-title {
   text-align: center;
-  margin: 50px 0;
+  margin: 0;
+  padding: 50px 0;
 }
 
 .content .cheat-sheet {
@@ -65,6 +68,7 @@ pre {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transition: ease .3s;
   cursor: pointer;
+  background-color: #ffffff;
 }
 .content .cheat-sheet .box:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -104,7 +108,8 @@ pre {
   min-height: 400px;
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding: 10px 0;
+  margin: 0;
 }
 .content .contributors ul li {
   color: var(--hacktoberfest-text);
