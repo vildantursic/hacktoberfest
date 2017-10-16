@@ -54,6 +54,30 @@
           <h2 class="title">Push Commit <span class="tooltip">Click to copy</span></h2>
           <pre>git push origin coolBranch</pre>
         </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Fetch changes (and all branches) from the origin <span class="tooltip">Click to copy</span></h2>
+          <pre>git fetch (origin)</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">List Remotes <span class="tooltip">Click to copy</span></h2>
+          <pre>git remote -v</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Add this repo as a remote named 'upstream' <span class="tooltip">Click to copy</span></h2>
+          <pre>git remote add upstream https://github.com/vildantursic/hacktoberfest.git</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Fetch changes (and all branches) from the upstream repo <span class="tooltip">Click to copy</span></h2>
+          <pre>git fetch upstream</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Change branch <span class="tooltip">Click to copy</span></h2>
+          <pre>git checkout coolBranch</pre>
+        </div>
+        <div class="box" onclick="copyOnClick(this)">
+          <h2 class="title">Merge changes from upstream/master into origin/master <span class="tooltip">Click to copy</span></h2>
+          <pre>git checkout master &amp; git merge upstream/master </pre>
+        </div>
       </div>
       <!-- End of cheatsheet part -->
 
