@@ -126,3 +126,8 @@ footer {
   color: white;
   background-image: var(--hacktoberfest-background);
 }
+.subtitle {
+  text-align: center;
+  color: #ffffff;
+  padding: 50px 0px;
+}
