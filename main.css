@@ -30,11 +30,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-image: var(--hacktoberfest-background);
 }
 
 header img {
-  margin: auto;
+  margin: 0 auto;
+}
+header .subtitle {
+  text-align: center;
+  color: #ffffff;
 }
 
 pre {
@@ -125,9 +130,4 @@ footer {
   justify-content: center;
   color: white;
   background-image: var(--hacktoberfest-background);
-}
-.subtitle {
-  text-align: center;
-  color: #ffffff;
-  padding: 50px 0px;
 }
