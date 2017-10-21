@@ -10,7 +10,9 @@
     --hacktoberfest-center-margin: 0 10px;
   }
   .logo {
+    position: relative;
     width: 90%;
+    left: 5%;
   }
 }
 
