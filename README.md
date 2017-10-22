@@ -15,5 +15,6 @@ Link for Hacktoberfest PWA
     <li>Adnan Karšić</li>
     <li>Adnan Rahić</li>
     <li>Emina Zolota</li>
+    <li>Harrison Doran</li>
     <li>Srđan Međo</li>
 </ul>
