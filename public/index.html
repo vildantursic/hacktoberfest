@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <!-- Head part of page -->
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileImage" content="images/icons/icon-192x192.png">
+    <meta name="msapplication-TileColor" content="#ff625f">
+    <meta name="theme-color" content="#ff625f"/>
+
+    <link defer rel="manifest" href="manifest.json">
+    <link defer rel="shortcut icon" type="image/png" href="images/icons/icon-192x192.png"/>
+
     <!-- Title of page -->
     <title>Hacktoberfest Cheat Sheet</title>
     <!-- Import exeternal, main.css -->
-    <link rel="stylesheet" href="main.css">
+    <link defer rel="stylesheet" href="main.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.5.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.5.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.5.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.5.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.5.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 
   </head>
-  <!-- End of head part -->
-
-  <!-- Body part of page -->
   <body>
+
+    <div id="load"></div>
+
     <!-- Logo part of page -->
     <header>
-      <a href="https://hacktoberfest.digitalocean.com">
-        <img class="logo animated" src="logo.svg" alt="">
-      </a>
+      <img class="logo animated" src="images/logo.svg" alt="Hacktoberfest logo">
       <h1 class="subtitle">Sarajevo</h1>
     </header>
 
@@ -113,7 +127,6 @@
     </footer>
     <!-- End of footer -->
 
-    <script src="main.js" charset="utf-8"></script>
+    <script async src="main.js" charset="utf-8"></script>
   </body>
-  <!-- End of body part -->
 </html>
