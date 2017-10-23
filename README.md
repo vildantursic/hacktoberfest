@@ -1,4 +1,8 @@
 # hacktoberfest
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vildantursic/hacktoberfest/master/LICENSE)
+
+[![Join the chat at https://gitter.im/hacktoberfest/Lobby](https://badges.gitter.im/hacktoberbest/Lobby.svg)](https://gitter.im/hacktoberfest/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Here contribution starts!
 
 Link for site:
