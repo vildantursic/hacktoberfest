@@ -87,14 +87,17 @@
           <h2 class="title">Fetch changes (and all branches) from the upstream repo <span class="tooltip">Click to copy</span></h2>
           <pre>git fetch upstream</pre>
         </div>
-        <div class="box" onclick="copyOnClick(this)">
-          <h2 class="title">Change branch <span class="tooltip">Click to copy</span></h2>
-          <pre>git checkout coolBranch</pre>
-        </div>
-        <div class="box" onclick="copyOnClick(this)">
-          <h2 class="title">Merge changes from upstream/master into origin/master <span class="tooltip">Click to copy</span></h2>
-          <pre>git checkout master &amp; git merge upstream/master </pre>
-        </div>
+        
+        <box-component 
+          data-title="Change branch" 
+          data-code="git checkout coolBranch">
+        </box-component>
+
+        <box-component 
+          data-title="Merge changes from upstream/master into origin/master" 
+          data-code="git checkout master &amp; git merge upstream/master">
+        </box-component>
+
       </div>
       <!-- End of cheat sheet part -->
 
