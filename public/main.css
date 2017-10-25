@@ -84,8 +84,10 @@ pre {
   margin: var(--hacktoberfest-center-margin);
 }
 .content .cheat-sheet .box {
+  position: relative;
   width: calc(100% - 30px);
   min-height: 100px;
+  overflow: hidden;
   margin-bottom: 30px;
   padding: 15px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -102,14 +104,22 @@ pre {
   color: var(--hacktoberfest-text);
 }
 .content .cheat-sheet .box .tooltip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: -200px;
+  height: 100%;
+  width: 200px;
+  color: white;
+  background: var(--hacktoberfest-text);
   transition: ease .3s;
   float: right;
-  opacity: 0;
   font-size: 16px;
-  padding: 10px 15px;
 }
 .content .cheat-sheet .box:hover .tooltip {
-  opacity: 0.5;
+  right: 0;
 }
 
 
