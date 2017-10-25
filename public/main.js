@@ -82,12 +82,12 @@ function renderBoxComponent() {
   var ComponentProto = Object.create(HTMLElement.prototype);
   ComponentProto.createdCallback = function() {
 
-    this.innerHTML = '' +
-    '<div class="box" onclick="copyOnClick(this)">' +
-    '<h2 class="title">'+ this.getAttribute('data-title') +'<span class="tooltip">Click to copy</span></h2>' +
-    '<pre>'+ this.getAttribute('data-code') +'</pre>' +
-    '</div>';
-  
+    this.innerHTML = `
+      <div class="box" onclick="copyOnClick(this)">
+        <h2 class="title">${this.getAttribute('data-title')}<span class="tooltip">Click to copy</span></h2>
+        <pre>${this.getAttribute('data-code')}</pre>
+      </div>
+    `
   };
   var Component = document.registerElement('box-component', {prototype: ComponentProto});
 }
