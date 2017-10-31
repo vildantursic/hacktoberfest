@@ -36,14 +36,15 @@ document.addEventListener('DOMContentLoaded', function() {
  * and then copy it to the clipboard for use.
  */
 function copyOnClick(el) {
+  var pre = el.getElementsByTagName('pre')[0].innerHTML;
   let input = document.createElement("input");
   document.body.append(input);
-  input.setAttribute('value', el.childNodes[3].innerHTML);
+  input.setAttribute('value', pre);
   input.select();
   var copy = document.execCommand("copy");
   input.remove();
 
-  //If is sucesfully copied to clipboard, alert "Copied!"
+  //If is sucessfully copied to clipboard, alert "Copied!"
   if(copy != ""){
     showInfo("Copied!")
   }else{
@@ -76,3 +77,19 @@ function showInfo(message) {
   // At last, if the user has denied notifications, and you
   // want to be respectful there is no need to bother them any more.
 }
+
+function renderBoxComponent() {
+  var ComponentProto = Object.create(HTMLElement.prototype);
+  ComponentProto.createdCallback = function() {
+
+    this.innerHTML = `
+      <div class="box" onclick="copyOnClick(this)">
+        <h2 class="title">${this.getAttribute('data-title')}<span class="tooltip">Click to copy</span></h2>
+        <pre>${this.getAttribute('data-code')}</pre>
+      </div>
+    `
+  };
+  var Component = document.registerElement('box-component', {prototype: ComponentProto});
+}
+
+renderBoxComponent();
