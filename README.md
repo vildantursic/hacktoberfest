@@ -21,4 +21,5 @@ Link for Hacktoberfest PWA
     <li>Emina Zolota</li>
     <li>Harrison Doran</li>
     <li>Srđan Međo</li>
+    <li>Nobody Important</li>
 </ul>
